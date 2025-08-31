@@ -96,20 +96,47 @@ Using Suricata + Zeek, I reconstructed a multi-stage malware infection chain inv
 
 ## 📊 Evidence Gallery
 
-### Incident Timeline
-![Incident Timeline](images/timeline.png)
+## 📊 Evidence Gallery
 
-### Security Onion Dashboard
-![Security Onion Dashboard](images/so-dashboard-overview.png)
+<table>
+  <tr>
+    <td>
+      <a href="images/timeline.png" target="_blank">
+        <img src="images/timeline.png" alt="Incident Timeline" width="420">
+      </a>
+      <p align="center"><em>Incident Timeline</em></p>
+    </td>
+    <td>
+      <a href="images/so-dashboard-overview.png" target="_blank">
+        <img src="images/so-dashboard-overview.png" alt="Security Onion Dashboard" width="420">
+      </a>
+      <p align="center"><em>Security Onion Dashboard</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="images/so-suricata-alerts.png" target="_blank">
+        <img src="images/so-suricata-alerts.png" alt="Suricata Alerts (Lumma Stealer & SecTopRAT)" width="420">
+      </a>
+      <p align="center"><em>Suricata Alerts (Lumma Stealer & SecTopRAT)</em></p>
+    </td>
+    <td>
+      <a href="images/so-hunt-results.png" target="_blank">
+        <img src="images/so-hunt-results.png" alt="Hunt Results (Event Timeline)" width="420">
+      </a>
+      <p align="center"><em>Hunt Results (Event Timeline)</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <a href="images/domain-whois-vishneviyjazz.png" target="_blank">
+        <img src="images/domain-whois-vishneviyjazz.png" alt="WHOIS Lookup (vishneviyjazz.ru)" width="520">
+      </a>
+      <p><em>WHOIS Lookup (vishneviyjazz.ru)</em></p>
+    </td>
+  </tr>
+</table>
 
-### Suricata Alerts (Lumma Stealer & SecTopRAT)
-![Suricata Alerts](images/so-suricata-alerts.png)
-
-### Hunt Results (Event Timeline)
-![Hunt Results](images/so-hunt-results.png)
-
-### WHOIS Lookup (vishneviyjazz.ru)
-![WHOIS Lookup](images/domain-whois-vishneviyjazz.png)
 
 
 
