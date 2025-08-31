@@ -1,4 +1,4 @@
-# securityonion-lab-lumma-stealer-sectoprat-8.15
+
 # Security Onion Lab – Lumma Stealer + SecTopRAT
 
 This repo documents my analysis of a malicious PCAP imported into **Security Onion 2**.  
@@ -93,6 +93,24 @@ Using Suricata + Zeek, I reconstructed a multi-stage malware infection chain inv
 ---
 
 *PCAP source: [malware-traffic-analysis.net](https://www.malware-traffic-analysis.net/)*
+
+## 📊 Evidence Gallery
+
+### Incident Timeline
+![Incident Timeline](images/timeline.png)
+
+### Security Onion Dashboard
+![Security Onion Dashboard](images/so-dashboard-overview.png)
+
+### Suricata Alerts (Lumma Stealer & SecTopRAT)
+![Suricata Alerts](images/so-suricata-alerts.png)
+
+### Hunt Results (Event Timeline)
+![Hunt Results](images/so-hunt-results.png)
+
+### WHOIS Lookup (vishneviyjazz.ru)
+![WHOIS Lookup](images/domain-whois-vishneviyjazz.png)
+
 
 
 
