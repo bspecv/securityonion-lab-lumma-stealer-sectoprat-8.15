@@ -29,6 +29,42 @@ Using Suricata + Zeek, I reconstructed a multi-stage malware infection chain inv
 
 📌 *Lesson learned*: **Threat actors are persistant, there's much more than a single attack**
                      **WHOIS or a DNS lookup today may not match what the domain resolved to during the incident**
+                     
+🔎 How to Detect Lumma Activity
+
+Detection relies on a mix of network IDS and endpoint telemetry:
+
+DNS Monitoring
+
+Suricata/Zeek rules trigger when a host resolves a known Lumma C2 domain.
+
+Example alert:
+
+ET MALWARE Win32/Lumma Stealer Related CnC Domain in DNS Lookup
+
+
+TLS SNI Inspection
+
+Even if the traffic is encrypted, the TLS Server Name Indication (SNI) often exposes the domain (vishneviyjazz.ru in this case).
+
+Suricata raises an alert when a client includes this domain in the TLS handshake.
+
+Wireshark can also display the SNI under the TLS handshake details. (Insert your screenshot here →)
+
+![Wireshark SNI Capture](images/wireshark-sni-example.png)
+
+
+Endpoint Behavior
+
+Watch for suspicious process chains (PowerShell, MSIHTA) or access to browser/crypto files.
+
+EDR tools (Sysmon, CrowdStrike, etc.) can flag unusual file access or network beacons.
+
+Emerging Threats (ET) Rulesets
+
+Keep Suricata ET signatures up-to-date; Lumma domains rotate frequently.
+
+Rules map to MITRE ATT&CK: TA0011 (C2), T1071 (Application Layer Protocol).                     
 
 ---
 
