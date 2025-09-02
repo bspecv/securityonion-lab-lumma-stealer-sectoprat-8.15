@@ -51,7 +51,7 @@ Suricata raises an alert when a client includes this domain in the TLS handshake
 
 Wireshark can also display the SNI under the TLS handshake details. (Insert your screenshot here →)
 
-![Wireshark SNI Capture](images/wireshark-sni-example.png)
+![Wireshark SNI Capture](images/Wiresharkpcap8.15.png)
 
 
 Endpoint Behavior
