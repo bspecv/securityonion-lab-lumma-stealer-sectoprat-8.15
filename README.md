@@ -49,9 +49,9 @@ Even if the traffic is encrypted, the TLS Server Name Indication (SNI) often exp
 
 Suricata raises an alert when a client includes this domain in the TLS handshake.
 
-Wireshark can also display the SNI under the TLS handshake details. (Insert your screenshot here →)
+Wireshark can also display the SNI under the TLS handshake details. 
 
-![Wireshark SNI Capture](images/Wiresharkpcap8.15.png)
+Wireshark SNI Capture (images/Wiresharkpcap8.15.png)
 
 
 Endpoint Behavior
